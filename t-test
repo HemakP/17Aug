@@ -1,0 +1,6 @@
+import pandas as pd
+data = pd.read_csv("C:\\Users\\hemakpatel\\Downloads\\Before_After.csv")
+t_num = sum(data['d'])
+t_denom = sqrt((len(data['BC'])*sum(data['d^2'])-(sum(data['d'])**2))/(len(data['BC'])-1))
+t = t_num/t_denom
+t
